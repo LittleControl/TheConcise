@@ -1,0 +1,50 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #F0FFFF;
+}
+
+.nav {
+    width: 100%;
+    height: 8%;
+    background-color: black;
+}
+
+.main {
+    width: 90%;
+    height: 86%;
+    background-color: pink;
+    margin: auto;
+}
+
+.author {
+    width: 35%;
+    height: 40%;
+    background-color: #bfa;
+}
+
+.copyright {
+    height: 6%;
+    width: 100%;
+    background-color: #FFE4E1;
+}
+
+.info,
+.record {
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.go-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #FF8C00;
+    right: 5%;
+    bottom: 5%;
+}
