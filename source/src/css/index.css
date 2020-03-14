@@ -1,50 +1,97 @@
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #F0FFFF;
 }
-
-body {
-    background-color: #F0FFFF;
-}
-
 .nav {
-    width: 100%;
-    height: 8%;
-    background-color: black;
+  width: 100%;
+  height: 8%;
+  background-color: black;
 }
-
 .main {
-    width: 90%;
-    height: 86%;
-    background-color: pink;
-    margin: auto;
+  width: 90%;
+  height: 86%;
+  background-color: pink;
+  margin: auto;
 }
-
-.author {
-    width: 35%;
-    height: 40%;
-    background-color: #bfa;
+.main .foil {
+  width: 28%;
+  height: 100%;
+  background-color: blanchedalmond;
+  float: left;
 }
-
+.main .foil .author {
+  width: 100%;
+  height: 50%;
+  background-color: whitesmoke;
+  border: red 1px solid;
+}
+.main .foil .author .avatar {
+  width: 21%;
+  height: 25%;
+  border: 1px red solid;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+}
+.main .foil .author .name {
+  width: 77%;
+  height: 8%;
+  float: left;
+  margin-left: 2%;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2em;
+}
+.main .foil .author .name::before {
+  font-size: 16px;
+  color: brown;
+  content: "我喜欢你们叫我:";
+}
+.main .foil .author .name::after {
+  font-size: 16px;
+  color: brown;
+  content: "<(＃￣▽￣＃)>";
+}
+.main .foil .author .intro {
+  width: 77%;
+  height: 17%;
+  float: left;
+  margin-left: 2%;
+  color: skyblue;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 4em;
+}
+.main .foil .others {
+  width: 100%;
+  height: 50%;
+  border: 1px red solid;
+}
+.main .content {
+  width: 72%;
+  height: 100%;
+  background-color: aquamarine;
+  float: left;
+}
 .copyright {
-    height: 6%;
-    width: 100%;
-    background-color: #FFE4E1;
+  height: 6%;
+  width: 100%;
+  background-color: #FFE4E1;
 }
-
-.info,
-.record {
-    width: 100%;
-    text-align: center;
-    margin-top: 3px;
+.copyright .info,
+.copyright .record {
+  width: 100%;
+  text-align: center;
+  margin-top: 3px;
 }
-
 .go-to-top {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background-color: #FF8C00;
-    right: 5%;
-    bottom: 5%;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #FF8C00;
+  right: 5%;
+  bottom: 5%;
 }
