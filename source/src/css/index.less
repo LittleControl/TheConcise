@@ -1,0 +1,113 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F0FFFF;
+}
+
+.nav {
+    width: 100%;
+    height: 8%;
+    background-color: black;
+}
+
+.main {
+    width: 90%;
+    height: 86%;
+    background-color: pink;
+    margin: auto;
+
+    .foil {
+        width: 28%;
+        height: 100%;
+        background-color: blanchedalmond;
+        float: left;
+
+        .author {
+            width: 100%;
+            height: 50%;
+            background-color: whitesmoke;
+            border: red 1px solid;
+
+            .avatar {
+                width: 21%;
+                height: 25%;
+                border: 1px red solid;
+                overflow: hidden;
+                border-radius: 50%;
+                float: left;
+            }
+
+            .name {
+                width: 77%;
+                height: 8%;
+                float: left;
+                margin-left: 2%;
+                color: red;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 2em;
+
+                &::before {
+                    font-size: 16px;
+                    color: brown;
+                    content: "我喜欢你们叫我:";
+                }
+
+                &::after {
+                    font-size: 16px;
+                    color: brown;
+                    content: "<(＃￣▽￣＃)>";
+                }
+            }
+
+            .intro {
+                width: 77%;
+                height: 17%;
+                float: left;
+                margin-left: 2%;
+                color: skyblue;
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 4em;
+            }
+
+            .archrve {}
+        }
+
+        .others {
+            width: 100%;
+            height: 50%;
+            border: 1px red solid;
+        }
+    }
+
+    .content {
+        width: 72%;
+        height: 100%;
+        background-color: aquamarine;
+        float: left;
+    }
+}
+
+.copyright {
+    height: 6%;
+    width: 100%;
+    background-color: #FFE4E1;
+
+    .info,
+    .record {
+        width: 100%;
+        text-align: center;
+        margin-top: 3px;
+    }
+}
+
+.go-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #FF8C00;
+    right: 5%;
+    bottom: 5%;
+}
