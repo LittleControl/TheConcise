@@ -1,7 +1,25 @@
+a {
+    text-decoration: none;
+
+    &:link {
+        color: #6c757d;
+    }
+
+    &:visited {
+        color: #6c757d;
+    }
+
+    &:hover {
+        color: rgb(153, 102, 255);
+    }
+
+    &:active {
+        color: rgb(153, 102, 255);
+    }
+}
+
 .holy {
     min-height: 100vh;
-    // display: flex;
-    // flex-direction: column;
 
     header {
         height: 7vh;
@@ -12,25 +30,33 @@
         min-height: 87vh;
         background-color: pink;
         display: flex;
-        // flex-grow: 2;
         align-items: stretch;
 
         .nothing {
-            width: 2vw;
+            width: 4vw;
         }
 
         .author {
-            width: 28vw;
+            width: 22vw;
+            padding: 1vw;
             background-color: blanchedalmond;
 
             .avatar {
-                width: 5vw;
                 height: 10vh;
-                overflow: hidden;
-                border-radius: 50%;
+                margin-bottom: 1vh;
+                display: flex;
+                justify-content: center;
+
+                .pic {
+                    overflow: hidden;
+                    border-radius: 50%;
+                }
             }
 
             .name {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                text-align: center;
                 color: red;
                 font-weight: bold;
                 font-size: 20px;
@@ -49,15 +75,67 @@
             }
 
             .intro {
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+                text-align: center;
                 color: skyblue;
-                font-size: 17px;
+                font-size: 20px;
                 font-weight: bold;
-                line-height: 4em;
+            }
+
+            .statistics {
+                width: 100%;
+                height: 8vh;
+                padding: 8px;
+                display: flex;
+                justify-content: space-around;
+                align-items: stretch;
+                border-top: 2px solid rgb(222, 226, 230);
+                border-bottom: 2px solid rgb(222, 226, 230);
+                text-align: center;
+
+                div {
+                    width: 33%;
+
+                    p {
+                        font-size: 20px;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+
+                .reviews {
+                    border-left: 1px solid rgb(222, 226, 230);
+                    border-right: 1px solid rgb(222, 226, 230);
+                }
+            }
+
+            .newest {
+                margin-top: 2vh;
+                border: 3px solid burlywood;
+                margin-bottom: 2vh;
+                padding: 1vw;
+
+                .tag-head {
+                    font-size: 25px;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+
+                .article-list {
+                    border-top: 2px solid red;
+
+                    li {
+                        padding: 10px;
+                    }
+                }
+
             }
         }
 
         .content {
-            width: 72vw;
+            width: 70vw;
             background-color: aquamarine;
 
             .article {
@@ -83,7 +161,7 @@
         position: fixed;
         width: 50px;
         height: 50px;
-        right: 2%;
+        right: 1%;
         bottom: 5%;
     }
 }

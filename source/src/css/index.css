@@ -1,3 +1,18 @@
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #6c757d;
+}
+a:visited {
+  color: #6c757d;
+}
+a:hover {
+  color: #9966ff;
+}
+a:active {
+  color: #9966ff;
+}
 .holy {
   min-height: 100vh;
 }
@@ -12,19 +27,27 @@
   align-items: stretch;
 }
 .holy .main .nothing {
-  width: 2vw;
+  width: 4vw;
 }
 .holy .main .author {
-  width: 28vw;
+  width: 22vw;
+  padding: 1vw;
   background-color: blanchedalmond;
 }
 .holy .main .author .avatar {
-  width: 5vw;
   height: 10vh;
+  margin-bottom: 1vh;
+  display: flex;
+  justify-content: center;
+}
+.holy .main .author .avatar .pic {
   overflow: hidden;
   border-radius: 50%;
 }
 .holy .main .author .name {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-align: center;
   color: red;
   font-weight: bold;
   font-size: 20px;
@@ -40,13 +63,55 @@
   content: "<(＃￣▽￣＃)>";
 }
 .holy .main .author .intro {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-align: center;
   color: skyblue;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 4em;
+}
+.holy .main .author .statistics {
+  width: 100%;
+  height: 8vh;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+  text-align: center;
+}
+.holy .main .author .statistics div {
+  width: 33%;
+}
+.holy .main .author .statistics div p {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.holy .main .author .statistics .reviews {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+.holy .main .author .newest {
+  margin-top: 2vh;
+  border: 3px solid burlywood;
+  margin-bottom: 2vh;
+  padding: 1vw;
+}
+.holy .main .author .newest .tag-head {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.holy .main .author .newest .article-list {
+  border-top: 2px solid red;
+}
+.holy .main .author .newest .article-list li {
+  padding: 10px;
 }
 .holy .main .content {
-  width: 72vw;
+  width: 70vw;
   background-color: aquamarine;
 }
 .holy .main .content .article {
@@ -67,6 +132,6 @@
   position: fixed;
   width: 50px;
   height: 50px;
-  right: 2%;
+  right: 1%;
   bottom: 5%;
 }
